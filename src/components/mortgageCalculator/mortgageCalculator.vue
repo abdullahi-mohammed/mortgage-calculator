@@ -1,5 +1,4 @@
 <style>
-@import url('/src/assets/main.css');
 @import url('./style.module.css');
 </style>
 
@@ -93,6 +92,7 @@
 
 <script>
 import { reactive, toRefs } from 'vue'
+import '../../assets/main.css'
 export default {
     setup() {
 

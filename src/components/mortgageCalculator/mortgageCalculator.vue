@@ -1,3 +1,8 @@
+<style scoped>
+@import url('/src/assets/main.css');
+@import url('./style.module.css');
+</style>
+
 <template>
     <main>
         <section class="calculator text-[#4e6e7e]">
@@ -165,8 +170,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-@import '/src/assets/main.css';
-@import './style.module.css'
-</style>

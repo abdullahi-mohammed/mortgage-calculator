@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Lime: #d7da2f;
+  --Red: hsl(4, 69%, 50%);
+  --White: hsl(0, 0%, 100%);
+  --Slate100: hsl(202, 86%, 94%);
+  --Slate300: #9abed5;
+  --Slate500: #6b94a8;
+  --Slate700: #4e6e7e;
+  --Slate900: #122f3f;
+}
+
+@font-face {
+  font-family: plusJakartaSans;
+  src: url(fonts/PlusJakartaSans-VariableFont_wght.ttf),
+    url(fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf),
+    url(fonts/static/PlusJakartaSans-Bold.ttf),
+    url(fonts/static/PlusJakartaSans-Medium.ttf);
+}
+
+body {
+  height: 100vh;
+  background-color: rgba(96, 178, 184, 0.212);
+  max-width: 1440px;
+  font-size: 16px;
+  width: 100%;
+  margin: auto;
+  /* flex-direction: column; */
+  font-family: plusJakartaSans, sans-serif;
+  overflow: auto;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+/* @import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */

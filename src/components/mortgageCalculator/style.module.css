@@ -1,0 +1,103 @@
+main {
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 60%;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 424x;
+}
+
+main .calculator {
+  padding: 24px;
+}
+
+.calculator .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.calculator .factors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.calculator .factors > div {
+  width: 100%;
+}
+
+main div:first-child input,
+main .factors input {
+  width: 100%;
+  display: inline-block;
+}
+
+main .results {
+  background-color: hsl(202, 55%, 16%);
+  padding: 24px;
+  color: white;
+}
+
+main .inputWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border: 1px hsl(203, 41%, 72%) solid;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+main .inputUnit {
+  background-color: hsl(202, 86%, 94%);
+  display: inline-block;
+  text-align: center;
+  padding: 5px 8px;
+}
+
+main .type .inputWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: unset;
+  position: relative;
+  width: 100%;
+  border: 1px hsl(203, 41%, 72%) solid;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 8px;
+}
+
+main input {
+  border: none;
+  padding: 5px;
+}
+
+main input:focus-visible,
+main input:focus,
+main input:focus-within {
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .results {
+    border-bottom-left-radius: 48px;
+  }
+
+  .calculator .factors {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+  }
+}

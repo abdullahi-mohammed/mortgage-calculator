@@ -167,5 +167,6 @@ export default {
 </script>
 
 <style scoped>
+@import '/src/assets/main.css';
 @import './style.module.css'
 </style>

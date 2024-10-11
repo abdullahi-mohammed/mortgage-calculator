@@ -1,4 +1,4 @@
-<style scoped>
+<style>
 @import url('/src/assets/main.css');
 @import url('./style.module.css');
 </style>

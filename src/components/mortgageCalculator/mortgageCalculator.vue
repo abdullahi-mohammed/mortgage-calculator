@@ -92,7 +92,6 @@
 
 <script>
 import { reactive, toRefs } from 'vue'
-import '../../assets/main.css'
 export default {
     setup() {
 
